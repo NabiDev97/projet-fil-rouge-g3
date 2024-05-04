@@ -16,7 +16,7 @@ pipeline {
     post{
           success{
               script{
-                    slackSend channel: 'filrougeg3', message: 'Pipeline reuissit'
+                    slackSend channel: 'filrougeg3', message: 'Pipeline executer avec success'
               }
           }
         }
