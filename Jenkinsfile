@@ -11,13 +11,14 @@ pipeline {
                 sh 'docker-compose up -d --build'
             }
         }
-        post{
+    }
+
+    post{
           success{
               script{
                     slackSend channel: 'filrougeg3', message: 'Pipeline reuissit'
               }
           }
         }
-    }
   
 }
