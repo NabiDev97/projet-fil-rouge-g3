@@ -12,7 +12,11 @@ pipeline {
             }
         }
         post{
-            slackSend channel: 'filrougeg3', message: 'Pipeline reuissit'
+          success{
+              script{
+                    slackSend channel: 'filrougeg3', message: 'Pipeline reuissit'
+              }
+          }
         }
     }
   
